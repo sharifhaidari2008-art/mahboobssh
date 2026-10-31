@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10112d">
+<title>MAHBOOB SSH</title>
+<style>
+:root{--bg:#0b0c20;--panel:#151735;--panel2:#1b1d43;--text:#f4f3ff;--muted:#a9aacb;--purple:#9b72ff;--blue:#54b8ff;--line:#30325e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#28205a 0,transparent 38%),linear-gradient(160deg,#090b1d,#111331 65%,#0b0c20);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+header{border-bottom:1px solid #ffffff18;background:#0b0c20bb;backdrop-filter:blur(12px);position:sticky;top:0;z-index:5}
+.wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 0}
+.brand{font-weight:900;letter-spacing:1.5px;font-size:20px}.brand span{color:var(--blue)}.navright{display:flex;align-items:center;gap:12px}
+button,select{font:inherit}.lang,.btn{border:1px solid var(--line);background:#191b3d;color:var(--text);padding:9px 13px;border-radius:11px;cursor:pointer}.hero{padding:65px 0 35px;text-align:center}.badge{display:inline-block;border:1px solid #8d70ff66;background:#8d70ff18;color:#c9baff;padding:6px 12px;border-radius:99px;font-size:13px}
+h1{font-size:clamp(36px,7vw,64px);line-height:1.08;margin:18px 0 12px;letter-spacing:-1.8px}.gradient{background:linear-gradient(90deg,#62c6ff,#a88aff);color:transparent;background-clip:text}.lead{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px}
+.actions{display:flex;justify-content:center;gap:12px;margin-top:25px;flex-wrap:wrap}.primary{background:linear-gradient(100deg,#398fe9,#8857e9);border:0;font-weight:700;padding:12px 19px;border-radius:12px;color:white;cursor:pointer}.secondary{background:#1b1d43;border:1px solid var(--line);padding:12px 19px;border-radius:12px;color:white;cursor:pointer}
+.notice{margin:28px auto 0;max-width:800px;background:#30254a;border:1px solid #8762cc66;color:#e8dcff;border-radius:13px;padding:12px 15px;font-size:13px;text-align:start}
+.section{padding:28px 0 45px}.section h2{font-size:25px;margin:0 0 7px}.sub{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(145deg,#191b3e,#12142e);border:1px solid var(--line);border-radius:17px;padding:19px;box-shadow:0 14px 35px #0002}
+.card h3{margin:0 0 5px}.card p{color:var(--muted);margin:0 0 14px;font-size:14px}.tag{font-size:12px;color:#a9dfff;background:#2b6d9b33;border:1px solid #398fc455;border-radius:99px;padding:4px 8px;display:inline-block}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.tab{padding:9px 16px;border-radius:10px;border:1px solid var(--line);background:#151735;color:var(--muted);cursor:pointer}.tab.active{background:#40306e;border-color:#9872ff;color:white}
+.panel{background:#12142e;border:1px solid var(--line);border-radius:17px;padding:20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}.field input,.field select{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:#0d1028;color:white;outline:none}
+.output{margin-top:16px;background:#090b1c;border:1px dashed #55518b;border-radius:12px;padding:14px;color:#d6d2ff;overflow-wrap:anywhere;font-family:ui-monospace,monospace;font-size:13px;min-height:48px}
+footer{border-top:1px solid #ffffff18;padding:23px 0;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.hero{padding-top:45px}.nav{padding:13px 0}.brand{font-size:17px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">MAHBOOB <span>SSH</span></div><div class="navright"><button class="lang" id="langBtn">فارسی</button></div></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="badge" data-en="SSH • UDP • NETWORK TOOLS" data-fa="ابزارهای شبکه • SSH • UDP">SSH • UDP • NETWORK TOOLS</div>
+<h1 data-en="Your connection.<br><span class='gradient'>Your control.</span>" data-fa="اتصال تو،<br><span class='gradient'>مدیریت تو.</span>">Your connection.<br><span class="gradient">Your control.</span></h1>
+<p class="lead" data-en="Welcome to MAHBOOB SSH — a clean dashboard for learning about servers, SSH and UDP configurations." data-fa="به مه‌بوب اس‌اس‌اچ خوش آمدید؛ داشبوردی ساده برای آشنایی با سرورها و تنظیمات SSH و UDP.">Welcome to MAHBOOB SSH — a clean dashboard for learning about servers, SSH and UDP configurations.</p>
+<div class="actions"><a class="primary" href="#services" style="text-decoration:none" data-en="Explore services" data-fa="مشاهده خدمات">Explore services</a><a class="secondary" href="#config" style="text-decoration:none" data-en="Configuration demo" data-fa="نمایش نمونه کانفیگ">Configuration demo</a></div>
+<div class="notice" data-en="Demo mode: no live VPS servers or account creation are connected yet. Real SSH/UDP accounts require an authorized server and backend setup." data-fa="حالت آزمایشی: هنوز هیچ سرور VPS یا ساخت حساب واقعی وصل نشده است. ساخت حساب واقعی SSH/UDP به سرور مجاز و راه‌اندازی بخش پشتیبان نیاز دارد.">Demo mode: no live VPS servers or account creation are connected yet. Real SSH/UDP accounts require an authorized server and backend setup.</div>
+</section>
+<section class="section" id="services">
+<h2 data-en="Services" data-fa="خدمات">Services</h2><p class="sub" data-en="A preview of the tools planned for this platform." data-fa="پیش‌نمایشی از ابزارهایی که برای این پلتفرم در نظر گرفته شده است.">A preview of the tools planned for this platform.</p>
+<div class="grid">
+<article class="card"><span class="tag">SSH</span><h3 data-en="SSH Accounts" data-fa="حساب‌های SSH">SSH Accounts</h3><p data-en="A future account panel for authorized servers, expiry dates and user access." data-fa="پنل آینده برای حساب‌های سرور مجاز، تاریخ انقضا و دسترسی کاربران.">A future account panel for authorized servers, expiry dates and user access.</p></article>
+<article class="card"><span class="tag">UDP</span><h3 data-en="UDP Configurations" data-fa="تنظیمات UDP">UDP Configurations</h3><p data-en="Organize and download configuration profiles for compatible client apps." data-fa="دسته‌بندی و دریافت پروفایل‌های کانفیگ برای برنامه‌های سازگار.">Organize and download configuration profiles for compatible client apps.</p></article>
+<article class="card"><span class="tag">TOOLS</span><h3 data-en="Server Status" data-fa="وضعیت سرورها">Server Status</h3><p data-en="A live status page can be connected after server monitoring is configured." data-fa="پس از تنظیم نظارت سرورها، صفحه وضعیت زنده قابل اتصال است.">A live status page can be connected after server monitoring is configured.</p></article>
+</div>
+</section>
+<section class="section" id="config">
+<h2 data-en="Configuration preview" data-fa="پیش‌نمایش کانفیگ">Configuration preview</h2><p class="sub" data-en="This creates a sample text only; it does not connect to a server." data-fa="این بخش فقط یک متن نمونه می‌سازد و به هیچ سروری وصل نمی‌شود.">This creates a sample text only; it does not connect to a server.</p>
+<div class="panel">
+<div class="tools"><button class="tab active" data-kind="ssh">SSH</button><button class="tab" data-kind="udp">UDP</button></div>
+<div class="formgrid"><div class="field"><label data-en="Profile name" data-fa="نام پروفایل">Profile name</label><input id="profile" value="Mahboob-Demo"></div><div class="field"><label data-en="Server label" data-fa="نام سرور">Server label</label><select id="server"><option>Demo server (not connected)</option></select></div></div>
+<div class="actions" style="justify-content:flex-start"><button class="primary" id="makeBtn" data-en="Generate sample" data-fa="ساخت نمونه">Generate sample</button><button class="secondary" id="copyBtn" data-en="Copy text" data-fa="کپی متن">Copy text</button></div>
+<div class="output" id="output">MAHBOOB SSH — DEMO ONLY</div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 MAHBOOB SSH · <span data-en="Independent project" data-fa="پروژه مستقل">Independent project</span></div></footer>
+<script>
+let lang='en',kind='ssh';
+const langBtn=document.getElementById('langBtn');
+function setLang(){document.documentElement.lang=lang;document.documentElement.dir=lang==='fa'?'rtl':'ltr';document.querySelectorAll('[data-en]').forEach(el=>el.innerHTML=el.dataset[lang]);langBtn.textContent=lang==='en'?'فارسی':'English'}
+langBtn.onclick=()=>{lang=lang==='en'?'fa':'en';setLang()};
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');kind=b.dataset.kind});
+document.getElementById('makeBtn').onclick=()=>{const name=document.getElementById('profile').value.trim()||'Mahboob-Demo';document.getElementById('output').textContent=`# MAHBOOB SSH — DEMO ONLY\n# Profile: ${name}\n# Type: ${kind.toUpperCase()}\n# Server: NOT CONNECTED\n# This is placeholder text, not a working configuration.`};
+document.getElementById('copyBtn').onclick=async()=>{const t=document.getElementById('output').textContent;try{await navigator.clipboard.writeText(t);document.getElementById('copyBtn').textContent=lang==='en'?'Copied!':'کپی شد!'}catch(e){alert(t)}};
+</script>
+</body></html>
